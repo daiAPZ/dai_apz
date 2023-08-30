@@ -1,27 +1,27 @@
 html {
   font-family: sans-serif;
-  background: #eee;
+  background: #e5cbe7;
   padding: 1rem;
 }
 body {
   max-width: 960px;
   margin: 0 auto;
-  background: white;
+  background: rgb(196, 136, 218);
 }
 h1 {
   font-family: serif;
-  color: #377ba8;
+  color: #af0caf;
   margin: 1rem 0;
 }
 a {
-  color: #377ba8;
+  color: #af44ca;
 }
 hr {
   border: none;
-  border-top: 1px solid lightgray;
+  border-top: 1px solid rgb(87, 75, 75);
 }
 nav {
-  background: lightgray;
+  background: rgb(66, 42, 90);
   display: flex;
   align-items: center;
   padding: 0 0.5rem;
@@ -50,7 +50,7 @@ header .action {
   padding: 0 1rem 1rem;
 }
 .content > header {
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid rgb(224, 192, 245);
   display: flex;
   align-items: flex-end;
 }
@@ -61,8 +61,8 @@ header .action {
 .flash {
   margin: 1em 0;
   padding: 1em;
-  background: #cae6f6;
-  border: 1px solid #377ba8;
+  background: #c8a9f0;
+  border: 1px solid #739bb6;
 }
 .post > header {
   display: flex;
@@ -104,7 +104,7 @@ header .action {
   resize: vertical;
 }
 input.danger {
-  color: #cc2f2e;
+  color: #861616;
 }
 input[type="submit"] {
   align-self: start;
