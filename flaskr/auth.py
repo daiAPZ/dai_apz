@@ -17,7 +17,8 @@ def register():
         username = request.form['username']
         password = request.form['password']
         VerifiContra = request.form['password2']
-        VerifiEmail = request.form['password3']
+        email = request.form['email']
+
         db = get_db()
         error = None
 
@@ -27,14 +28,14 @@ def register():
             error = 'Error de contraseña.'
         elif (not VerifiContra == password):
             error = 'Error de verificacion.'
-        elif not VerifiEmail:
+        elif not email:
             error = 'Error de Email.'
 
         if error is None:
             try:
                 db.execute(
-                    "INSERT INTO user (username, password) VALUES (?, ?)",
-                    (username, generate_password_hash(password)),
+                    "INSERT INTO user (username, password, email) VALUES (?, ?, ?)",
+                    (username, generate_password_hash(password), email),
                 )
                 db.commit()
             except db.IntegrityError:
